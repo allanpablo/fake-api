@@ -1,0 +1,78 @@
+{
+    "usuarios": [{
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@email.com",
+            "tipo": "3",
+            "senha": "12345"
+        },
+        {
+            "id": 2,
+            "nome": "Maria Souza",
+            "email": "maria.souza@email.com",
+            "tipo": "2",
+            "senha": "12345"
+        },
+        {
+            "id": 3,
+            "nome": "Carlos Pereira",
+            "email": "carlos.pereira@email.com",
+            "tipo": "1",
+            "senha": "12345"
+        }
+    ],
+    "pedidos": [{
+            "id": 1,
+            "usuarioId": 1,
+            "bebidaId": 1,
+            "quantidade": 2,
+            "status": "preparando"
+        },
+        {
+            "id": 2,
+            "usuarioId": 2,
+            "bebidaId": 2,
+            "quantidade": 1,
+            "status": "pronto"
+        }
+    ],
+    "bebidas": [{
+            "id": 1,
+            "nome": "Café Expresso",
+            "ingredientes": [
+                "caf\u00e9"
+            ],
+            "lactose": false,
+            "gorduraTrans": false,
+            "pre\u00e7o": 3.5
+        },
+        {
+            "id": 2,
+            "nome": "Cappuccino",
+            "ingredientes": [
+                "caf\u00e9",
+                "leite",
+                "canela"
+            ],
+            "lactose": true,
+            "gorduraTrans": false,
+            "pre\u00e7o": 4.0
+        }
+    ],
+    "qrcodes": [{
+            "pedidoId": 1,
+            "codigo": "QRCODE12345",
+            "url": "https://example.com/qrcode/12345"
+        },
+        {
+            "pedidoId": 2,
+            "codigo": "QRCODE67890",
+            "url": "https://example.com/qrcode/67890"
+        }
+    ],
+    "tipo": [{
+        "1": "admin",
+        "2": "operador",
+        "3": "cliente"
+    }]
+}
